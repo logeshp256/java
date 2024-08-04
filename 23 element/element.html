@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="enter">hello</h1> -->
+    <div class="enter">hello</div>
+    <div class="enter">sk</div>
+    <div class="enter">lk</div>
+    <script>
+        // element selectors = Methods used to target and manipulate HTML elements 
+//                                     They allow you to select one or multiple HTML elements
+//                                     from the DOM (Document Object Model)
+
+// 1. document.getElementById()                 // ELEMENT OR NULL
+// 2. document.getElementsClassName()  // HTML COLLECTION
+// 3. document.getElementsByTagName() // HTML COLLECTION
+// 4. document.querySelector()                    // FIRST ELEMENT OR NULL
+// 5. document.querySelectorAll()               // NODELIST
+// 1. document.getElementById()                 // ELEMENT OR NULL
+// const enter = document.getElementById("enter");
+
+// enter.style.backgroundColor ="red";
+// enter.style.textAlign = "center";
+
+// 2. document.getElementsClassName()  // HTML COLLECTION
+
+// const enter = document.getElementsByClassName("enter");
+//  enter[0].style.backgroundColor ="red";
+// console.log(enter);
+// for(let enters of enter){
+//      enters.style.backgroundColor ="red";
+// }
+
+// 3. document.getElementsByTagName() // HTML COLLECTION
+
+// const enter = document.getElementsByTagName("div");
+// //  enter.style.backgroundColor ="red";
+// for(let enters of enter){
+//      enters.style.backgroundColor ="red";
+
+// }
+
+// 4. document.querySelector()                    // FIRST ELEMENT OR NULL
+const enter = document.querySelector("div") 
+enter.style.backgroundColor ="red";
+    </script>
+</body>
+</html>

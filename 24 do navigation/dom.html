@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="name">
+        <li>logesh</li>
+        <li>kumar</li>
+        <li>lk</li>
+    </ul>
+
+    <ul id="name">
+        <li>siva</li>
+        <li>kumar</li>
+        <li>lk</li>
+    </ul>
+
+    <ul id="name">
+        <li>seeni</li>
+        <li>kumar</li>
+        <li>lk</li>
+    </ul>
+
+    <script>
+// / DOM Navigation = The process of navigating through the structure 
+//                                  of an HTML document using JavaScript.
+
+// .firstElementChild
+// .lastElementChild
+// .nextElementSibling
+// .previousElementSibling
+// .parentElement
+// .children
+const ulElements = document.querySelectorAll("ul");
+
+ulElements.forEach(ulElement => {
+    const firstChild = ulElement.firstElementChild;
+    firstChild.style.backgroundColor = "yellow";
+});  
+
+    </script>
+</body>
+</html>

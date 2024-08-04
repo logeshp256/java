@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <label for="" > subcribe</label>
+     <input type="checkbox" name="" id="subcribe"><br>
+
+    <label for=""> laungage</label> <br>
+    <input type="radio" id="tamil" name="lk">tamil <br>
+    <input type="radio" id="english" name="lk">english <br>
+    <input type="radio" id="telugu" name="lk">telugu <br>
+
+    <button id="enter">enter</button>
+    <p id="sub"></p>
+    <p id="lang"></p>
+
+
+
+    <script>
+
+        const subcribe = document.getElementById("subcribe");
+        const tamil = document.getElementById("tamil");
+        const english = document.getElementById("english");
+        const telugu = document.getElementById("telugu");
+        const enter = document.getElementById("enter");
+        const sub = document.getElementById("sub");
+        const lang = document.getElementById("lang");
+
+        enter.onclick = function(){
+            if(subcribe.checked){
+                sub.textContent = 'you subcribe'
+            }
+            else{
+                sub.textContent = 'your not sub'
+            }
+            if(tamil.checked){
+                lang.textContent ="your language is tamil"
+            }
+            else if(english.checked){
+                lang.textContent ="your language is english"
+            }
+           else{
+                lang.textContent ="your language is telugu"
+            }
+        }
+
+    </script>
+</body>
+</html>

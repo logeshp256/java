@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <button id="btn">roll</button><br>
+    <label for="" id="ans1"></label><br>
+    <label for="" id="ans2"></label><br>
+    <label for="" id="ans3"></label><br>
+
+    <script>
+
+        const btn = document.getElementById("btn");
+        const ans1 = document.getElementById("ans1");
+        const ans2 = document.getElementById("ans2");
+        const ans3 = document.getElementById("ans3");
+        const min = 2;
+        const max = 6;
+        let answer ;
+        let answer1 ;
+        let answer3 ;
+
+        btn.onclick = function(){
+            answer = Math.floor(Math.random()*max )+ min;
+            answer1 = Math.floor(Math.random()*max )+ min;
+            answer3 = Math.floor(Math.random()*max )+ min;
+            ans1.innerHTML = answer;
+            ans2.innerHTML = answer1;
+            ans3.innerHTML = answer3 ;
+        }
+
+    </script>
+</body>
+</html>

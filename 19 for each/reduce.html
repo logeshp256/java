@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><script>
+    const numb = [12,34,56,78,90];
+    const ans = numb.reduce(lk);
+    const answer = numb.reduce(sk);
+
+    console.log(ans)
+    console.log(answer)
+
+    function lk (acc,element){
+        return Math.max(acc,element);
+    }
+    function sk(acc,element){
+        return Math.min(acc,element)
+    }
+
+</script>
+</body>
+</html>
